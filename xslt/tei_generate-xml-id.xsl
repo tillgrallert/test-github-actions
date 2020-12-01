@@ -12,17 +12,11 @@
         version="1.0"/>
     <!-- identify the author of the change by means of a @xml:id -->
     <xsl:param name="p_id-editor" select="'pers_TG'"/>
-    <xsl:param name="p_editor">
-        <tei:respStmt xml:lang="en">
-            <tei:resp>TEI edition</tei:resp>
-            <tei:persName xml:id="pers_TG"><tei:forename>Till</tei:forename> <tei:surname>Grallert</tei:surname></tei:persName>
-        </tei:respStmt>
-    </xsl:param>
     <!-- generate an id for the most recent change -->
     <xsl:param name="p_id-change" select="generate-id(//tei:change[last()])"/>
 
     <!-- identity transform -->
-    <xsl:template match="@* | node()">
+    <xsl:template match="node() | @*" mode="#all">
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
         </xsl:copy>
