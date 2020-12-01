@@ -1,7 +1,7 @@
 #!/bin/bash
 
 REGEX="*TEIP5.xml"
-for f in `ls *tei/*TEIP5.xml`
+for f in `ls tei/*TEIP5.xml`
 do
   echo "Checking $f"
   if [[ $f =~ $REGEX ]]
