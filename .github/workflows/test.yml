@@ -1,8 +1,8 @@
-name: "Update teiHeaders"
+name: "Test GitHub Actions"
 on: 
   push:
     paths:
-      - master_CairoUrbanNews.xml
+      - tei/*.TEIP5.xml
 
 jobs:
   build:
@@ -11,7 +11,8 @@ jobs:
       # This step checks out a copy of your repository.
       - uses: actions/checkout@v2
       # This step references the directory that contains the action.
-      - uses: ./.github/actions/update-header
+      - uses: ./.github/actions/test
+      # this step automatically commits changes
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Updated teiHeaders
+          commit_message: Ran the test action

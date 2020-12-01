@@ -7,6 +7,6 @@ do
   if [[ $f =~ $REGEX ]]
   then
     echo "Converting $f"
-    saxon -s:"$f" -xsl:xslt/apply-master.xsl -o:"$f"
+    saxon -s:"$f" -xsl:xslt/tei_generate-xml-id.xsl -o:"$f"
   fi
 done
