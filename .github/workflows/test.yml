@@ -17,4 +17,4 @@ jobs:
       # this step automatically commits changes
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Ran the test action
+          commit_message: "Github actions: test"
