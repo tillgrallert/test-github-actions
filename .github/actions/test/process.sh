@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# select the file(s) that should be transformed
 for f in `ls tei/*TEIP5.xml`
 do
   echo "First test: generate a TXT file"
