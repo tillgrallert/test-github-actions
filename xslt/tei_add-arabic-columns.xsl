@@ -12,7 +12,7 @@
     <xsl:include href="functions_arabic-transcription.xsl"/>
     
     <xsl:param name="p_id-change" select="generate-id(//tei:change[last()])"/>
-    <xsl:param name="p_url-authority" select="'../../jaraid_source/authority-files/jaraid_authority-file.TEIP5.xml'"/>
+    <xsl:param name="p_url-authority" select="'../authority-files/jaraid_authority-file.TEIP5.xml'"/>
     <xsl:variable name="v_file-entities-master" select="doc($p_url-authority)"/>
     
     <xsl:template match="/">
