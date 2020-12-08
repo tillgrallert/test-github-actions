@@ -86,7 +86,7 @@
         </fileDesc>
         <xi:include change="#d2e356" href="oclc_644997575-master_teiHeader.TEIP5.xml" parse="xml" xml:id="xi:include_1.d2e185" xpointer="encodingDesc"/>
         <xi:include change="#d2e356" href="oclc_644997575-master_teiHeader.TEIP5.xml" parse="xml" xml:id="xi:include_2.d2e187" xpointer="profileDesc"/>
-        <revisionDesc xml:id="revisionDesc_1.d1e432"><change when="2020-12-01" who="##github" xml:id="d1e520" xml:lang="en">Added automated <tei:att xml:lang="en">xml:id</tei:att>s for every element that is a descendant of <tei:gi xml:lang="en">tei:text</tei:gi> and had no existing <tei:att xml:lang="en">xml:id</tei:att> following the pattern "name()_generate-id()".</change>
+        <revisionDesc xml:id="revisionDesc_1.d1e432"><change when="2020-12-08" who="#github" xml:id="d1e520" xml:lang="en">Added automated <tei:att xml:lang="en">xml:id</tei:att>s for every element that is a descendant of <tei:gi xml:lang="en">tei:text</tei:gi> and had no existing <tei:att xml:lang="en">xml:id</tei:att> following the pattern "name()_generate-id()".</change>
             <change xml:lang="en" change="#d1e520" xml:id="change_1.d1e204">This is just to test the GitHub actions</change>
             <change xml:lang="en" change="#d1e520" xml:id="change_2.d1e207">This is just to test the GitHub actions</change>
             <change when="2020-12-01" who="#pers_TG" xml:lang="en" change="#d1e520" xml:id="change_3.d1e210">Final validation of mark-up.</change>
