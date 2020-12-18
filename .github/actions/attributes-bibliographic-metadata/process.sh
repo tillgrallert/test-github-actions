@@ -11,10 +11,10 @@ do
   	echo "Update / generate bibliographic metadata"
   	echo "MODS"
   	saxon -s:"$f" -xsl:https://openarabicpe.github.io/convert_tei-to-bibliographic-data/xslt/convert_tei-to-mods_issues.xsl p_github-action=true
-  	saxon -s:"$f" -xsl:https://openarabicpe.github.io/convert_tei-to-bibliographic-data/xslt/convert_tei-to-mods_articles.xsl
+  	saxon -s:"$f" -xsl:https://openarabicpe.github.io/convert_tei-to-bibliographic-data/xslt/convert_tei-to-mods_articles.xsl p_github-action=true
   	echo "BibTeX"
   	saxon -s:"$f" -xsl:https://openarabicpe.github.io/convert_tei-to-bibliographic-data/xslt/convert_tei-to-bibtex_issues.xsl p_github-action=true
-  	saxon -s:"$f" -xsl:https://openarabicpe.github.io/convert_tei-to-bibliographic-data/xslt/convert_tei-to-bibtex_articles.xsl
+  	saxon -s:"$f" -xsl:https://openarabicpe.github.io/convert_tei-to-bibliographic-data/xslt/convert_tei-to-bibtex_articles.xsl p_github-action=true
   	echo "YAML"
   	saxon -s:"$f" -xsl:https://openarabicpe.github.io/convert_tei-to-bibliographic-data/xslt/convert_tei-to-yaml_issues.xsl p_github-action=true
   	echo "Zotero RDF"
