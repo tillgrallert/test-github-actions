@@ -4,8 +4,8 @@ on:
     paths:
       # this specifies the path of the file(s) that have to have been pushed
       # for triggering this action
+      # NOTE that the trigger is not the selector for files to be transformed
       - tei/*.TEIP5.xml
-
 jobs:
   build:
     runs-on: ubuntu-latest
