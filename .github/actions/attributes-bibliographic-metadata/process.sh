@@ -1,6 +1,6 @@
 #!/bin/bash
 # this selector is ignorant of the triggering file. The action will run on all files not just the ones recently changed
-for f in `ls tei/*.TEIP5.xml`
+for f in `ls tei/oclc_*.TEIP5.xml`
 do
 	echo "Add @xml:id to all new elements"
 	saxon -s:"$f" -xsl:https://openarabicpe.github.io/tools/xslt/tei_generate-xml-id.xsl -o:"$f" p_id-editor='github'
