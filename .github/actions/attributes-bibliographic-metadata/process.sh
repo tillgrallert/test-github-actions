@@ -7,7 +7,7 @@ do
 	echo "Add @xml:lang to all new elements"
 	saxon -s:"$file" -xsl:https://openarabicpe.github.io/tools/xslt/tei_generate-xml-lang.xsl -o:"$file" p_id-editor='github'
 	echo "Update sitemap.xml for Google's programmable search"
-	saxon -s:"$file" -xsl:https://openarabicpe.github.io/tools/xslt/generate_sitemap.xsl p_url-repository='tei'
+	saxon -s:"$file" -xsl:https://openarabicpe.github.io/tools/xslt/generate_sitemap.xsl
   	echo "Update / generate bibliographic metadata"
   	echo "MODS"
   	saxon -s:"$file" -xsl:https://openarabicpe.github.io/convert_tei-to-bibliographic-data/xslt/convert_tei-to-mods_issues.xsl p_github-action=true
