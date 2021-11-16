@@ -1,6 +1,8 @@
 FROM debian:buster-slim
 # Hack to prevent openjdk-11 install failing
-RUN mkdir /usr/share/man/man1/ 
+# there is a new problem with this hack: 
+## mkdir: cannot create directory '/usr/share/man/man1/': File exists
+# RUN mkdir /usr/share/man/man1/ 
 RUN apt-get update && apt-get -y install openjdk-11-jdk-headless \
   rename \
   wget \
